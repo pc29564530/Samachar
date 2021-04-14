@@ -1,0 +1,75 @@
+.headlines {
+  display: flex;
+  width: 98%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+
+}
+
+.content {
+  padding: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.lowerNewsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px 0;
+}
+
+.readmore {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px 0;
+}
+
+.source {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+}
+.title {
+  font-size: 22px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.description {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top:-50px;
+  color: #44444d;
+}
+
+@media (max-width: 800px) {
+  .headlines {
+    flex-direction: column;
+    width: 98%;
+  }
+  .logo {
+    width: 95%;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+.header_menu .MuiSvgIcon-root {
+  positon: relative;
+  z-index:2;
+  ccursor:pointer;
+}
