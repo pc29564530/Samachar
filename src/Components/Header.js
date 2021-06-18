@@ -4,8 +4,7 @@ import categories from "../data/categories";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 
-
-function Header({setCategory}) {
+function Header({setCategory,isMenuOpen,setIsMenuOpen}) {
 
  
     return (
@@ -19,7 +18,9 @@ function Header({setCategory}) {
                     
                 ))}
             </div>
-           
+              <div className="header_menu" onClick={()=>setIsMenuOpen(!isMenuOpen)}>
+               {isMenuOpen ? <CloseIcon/>:<MenuIcon/>}
+            </div>
             
         </div>
     )

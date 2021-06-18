@@ -1,32 +1,37 @@
 import React from 'react';
 import Headlines from "./Headlines";
+import './Headlines_pages.css';
+
 
 function Headlines_page({newsArray,newsResults,loadMore,setLoadMore}) {
     return (
-        <div className="headlines_page">
-            <div className="headlines_page_container">
+            <div className="headlines_page">
+                    <div className="content">
+                      
+                    
+                      {newsArray.map((items) => (
+                        <Headlines items={items} key={items.title} />
+                      ))}
 
-              {newsArray.map((items)=> (
-                 <Headlines items={items} key={items.title} />
-              	))}
-              {loadMore => newsResults && (
-
-              	<>
-                   <hr />
-                   <button
-                      className="loadMore" 
-
-                    onclick={()=> setLoadMore(loadMore+20)}
-                    	>
-                    	LoadMore
-                   </button>
-              	</>
-
-              	)}
+                     
+                      {loadMore <= newsResults && (
+                        <>
+                          <hr />
+                          <button
+                            className="loadMore"
+                            onClick={() => setLoadMore(loadMore + 20)}
+                          >
+                            Load More
+                          </button>
+                        </>
+                      )}
+                    </div>
+      </div>
+             
                 
-            </div>
-        </div>
+           
+     
     )
 }
 
-export default Headlines_page
+export default Headlines_page;
