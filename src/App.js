@@ -1,21 +1,22 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import './App.css';
+
 import Home from './Home';
 
 
-class App extends Component {
+function App() {
 
-	render(){
-		return(
-		
-			    <div className="app">
-			    	<Home />
-			    </div>
-	    
-		)
-	}
+
+	
+  return (
+    <div className="app">
+    
+     <Home />
+     
+      {/*home*/}
+      {/*footer*/}
+    </div>
+  );
 }
-
-
 
 export default App;

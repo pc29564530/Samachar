@@ -8,7 +8,6 @@ import Menu from './Menu';
 
 
 
-
 function Home() {
 	
 	const [newsArray,setNewsArray] = useState([]);
@@ -20,14 +19,11 @@ function Home() {
 	
 	
 
-
 	const apiURL = async()=>{
 		try{
 			const fetchData = await axios.get(
         `https://newsapi.org/v2/top-headlines?country=in&apiKey=${"cc5c9e92be6e475badbbff403f07ccb7"}&pageSize=${loadMore}&category=${category}`
-        	
       );
-
 			setNewsArray(fetchData.data.articles);
 			setNewsResults(fetchData.data.totalResults);
 		} catch{
