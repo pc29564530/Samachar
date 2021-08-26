@@ -1,6 +1,7 @@
 import React from 'react'
 import './Headlines.css';
 
+
 function Headlines({items}) {
     return (
               <div className="headlines">

@@ -10,7 +10,7 @@ function Headlines_page({newsArray,newsResults,loadMore,setLoadMore}) {
                       
                     
                       {newsArray.map((items) => (
-                        <Headlines items={items} key={items.title} />
+                        <Headlines items={items} key={items._id} />
                       ))}
 
                      
