@@ -27,7 +27,7 @@ function Home() {
 			setNewsArray(fetchData.data.articles);
 			setNewsResults(fetchData.data.totalResults);
 		} catch{
-			console.log("there is an error ");
+			console.log("unable to fetch the api");
 		}
 		
 	};
