@@ -1,5 +1,5 @@
 ### Samachar App 
-## It is a news app that use news api to fetch the news and news are categories into to different category
+## News web app to show latest news, uses news api to fetch news article and show them in different categories such as sports, politics, defence, etc..
 
 ![Screenshot from 2023-07-11 09-25-23](https://github.com/pc29564530/Samachar/assets/43681370/1921bcfa-b25c-4ce1-92e2-271ff342957b)
 
